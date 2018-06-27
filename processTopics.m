@@ -215,6 +215,9 @@ for topic = topics
             struct.angular = [a.angular];
         case 'data_processor/MarkerBearingArray'
             struct.bearings = [a.bearings];
+        case 'calibration_sim/InertialPoints'
+            struct.points = [a.points];
+            struct.pose = [a.pose];
         case 'visualization_msgs/Marker'
             number = 1;
             for i = a(end:-1:1)
