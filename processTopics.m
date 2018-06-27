@@ -7,7 +7,7 @@ function data = processTopics(topics,bagfile,t0)
   end
 
 addpath('./matlab_rosbag-0.4.1-linux64')
-addpath('./navfn')
+addpath('./functions')
 
 bag = ros.Bag.load(bagfile);
 for topic = topics
